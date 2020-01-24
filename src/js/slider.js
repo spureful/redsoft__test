@@ -21,13 +21,12 @@ function silmpleSlide() {
 	};
 
 	slider.addEventListener('mouseover', function () {
-		console.log('focus');
+	
 		clearInterval(autoSlider)
 	});
 
 	slider.addEventListener('mouseout', function () {
-		console.log('focus off');
-
+	
 		autoSlider = setInterval(moveSlideNext, 5000);
 	});
 
@@ -49,7 +48,7 @@ function silmpleSlide() {
 		for (let i = 0; i < slide.length; i++) {
 			let bgSlide = CurrentSlide + 1;
 			slide[i].style.transform = `translateX(${nextSlide}px)`;
-			promoSection.style.backgroundImage = `url('../img/promo-${bgSlide}.png')`;
+			promoSection.style.backgroundImage = `url('./img/promo-${bgSlide}.png')`;
 
 
 		}
