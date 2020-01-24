@@ -1,0 +1,134 @@
+.monitoring {
+	padding: 165px 0 225px;
+	background-color: #fafaff;
+
+	.container {
+		padding: 0 0 0 70px;
+
+		@include netbook {
+			padding: 0 9%;
+		}
+
+
+	}
+}
+
+
+.monitoring__title {
+	margin-bottom: 95px;
+	text-align: center;
+	margin-left: -55px;
+}
+
+.monitoring__list {
+	width: 54%;
+
+
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 611px;
+		height: 608px;
+
+		background-image: url(../img/phones.png);
+		position: absolute;
+
+		top: 0;
+		right: -100%;
+	}
+}
+
+
+.monitoring__item {
+	position: relative;
+
+	margin-bottom: 80px;
+
+
+
+	.monitoring__item-title,
+	.monitoring__descr {
+		position: relative;
+		z-index: 20;
+	}
+
+	&:after {
+		content: '';
+		width: 60px;
+		height: 123px;
+		background-color: #fafaff;
+
+
+		position: absolute;
+		left: -5px;
+		top: -40px;
+		z-index: 2;
+	}
+
+	&:before {
+		opacity: .7;
+		content: '';
+		width: 123px;
+		height: 123px;
+		border-radius: 50%;
+		border: 1px solid #16afe0;
+
+
+		position: absolute;
+		right: calc(100% - 10px);
+		top: -30px;
+
+
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		font-size: 60px;
+		font-weight: 500;
+		color: #23b3e2;
+		z-index: 0;
+
+	}
+
+
+	&:first-child {
+		&:before {
+			content: '1';
+		}
+	}
+
+	&:nth-child(2) {
+		&:before {
+			content: '2';
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+
+		&:before {
+			content: '3';
+		}
+	}
+
+}
+
+.monitoring__item-title {
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 0;
+
+	margin-bottom: 15px;
+}
+
+.monitoring__descr {
+	font-weight: 500;
+	line-height: 24px;
+	width: 98%;
+	letter-spacing: 0;
+}

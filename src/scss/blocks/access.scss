@@ -1,0 +1,44 @@
+.access {
+	background-color: #e3eaf5;
+	padding: 152px 0 155px;
+	
+	.container {
+		text-align: center;
+	}
+}
+
+.title.access__title {
+	margin-bottom: 45px;
+}
+
+.access__descr {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	width: 45%;
+	margin: 0 auto 56px;
+}
+
+.access__form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 48%;
+	margin: 0 auto;
+	
+}
+
+.access__input {
+	background-color: transparent;
+	border: 1px solid  #4f699b;
+	border-radius: 30px;
+	margin-right: 52px;
+	width: 100%;
+	padding-left: 10px;
+	
+	font-size: 14px;
+	color: #a8b2bf;
+	font-weight: 300;
+}

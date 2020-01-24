@@ -1,0 +1,38 @@
+.specialist {
+	background-color: #f1f2f9;
+	padding: 90px 0 75px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.specialist__img {
+	margin-right: 34px;
+	margin-top: -167px;
+	margin-left: -70px;
+
+}
+
+.specialist__container {
+	width: 52%;
+	margin-left: auto;
+
+	position: relative;
+
+
+}
+
+.specialist__title {
+	margin-bottom: 37px;
+}
+
+
+
+.specialist__item {
+	@extend .diary__item;
+	width: 55%;
+}

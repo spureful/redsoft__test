@@ -1,0 +1,30 @@
+include ./common/_mixins
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(content="ie=edge" http-equiv="x-ua-compatible")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		title Redsoft Test
+		link(rel='stylesheet' href='css/main.css')
+	
+	body
+		.wrapper
+			include common/promo.pug
+			include common/diary.pug
+			include common/functions.pug
+			include common/monitoring.pug
+			include common/specialist.pug
+			include common/access.pug
+			include common/footer.pug
+			
+			.modal
+				.modal__block
+					p.modal__text
+					button(type='button').btn.modal__btn ок
+				
+	
+	
+	script(src='js/scripts.js')
